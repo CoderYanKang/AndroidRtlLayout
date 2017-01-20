@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RtlDemo</string>
+    <string name="change_lang">切换版本</string>
+</resources>

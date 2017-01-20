@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/act_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            app:layout_scrollFlags="scroll"
+            app:tabSelectedTextColor="#666666"
+            app:tabTextColor="@android:color/darker_gray"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabIndicatorColor="@color/colorPrimary">
+        </android.support.design.widget.TabLayout>
+
+    </LinearLayout>
+
+    <com.yankang.rtldemo.RTLViewPager
+        android:id="@+id/act_viewpager"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+    </com.yankang.rtldemo.RTLViewPager>
+
+
+    <Button
+        android:id="@+id/change_lang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/change_lang"/>
+
+</LinearLayout>
